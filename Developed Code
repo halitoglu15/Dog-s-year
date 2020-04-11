@@ -1,17 +1,27 @@
 #include <iostream>
+#include <string>
+using namespace std;
 
 int main() {
   //your dog's age
   int dog_age;
+  //your dog's name
+  string dog_name;
+  
   std::cout<<"Enter your dog's age:";
   std::cin>>dog_age;
+  
+  std::cout<<"Enter your dog's name:";
+  std::cin>>dog_name;
+  
   //The first two year counts as 21 human years
   int early_years=21;
   //Each following year counts as 4 human years
   int later_years=(dog_age-2)*4;
   int human_years=early_years+later_years;
   
-  std::cout<<"\nMy name is Honey! Ruff ruff, I am\n"<< human_years <<" years old in human years\n";  
-  
+  std::cout<<"\nMy name is ";   
+  std::cout<< dog_name;
+  std::cout<<"!Ruff ruff, I am "<< human_years <<" years old in human years\n";
   
 }
